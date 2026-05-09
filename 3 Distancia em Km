@@ -1,0 +1,12 @@
+km = float(input("distancia em Km:"))
+litros = float(input(" litros de gasolina:"))
+
+consumo = km / litros
+
+if consumo < 8:
+    print ("venda carro!")
+
+elif consumo <= 12:
+    print ("economico!")
+else:
+    print (" super economico!")
