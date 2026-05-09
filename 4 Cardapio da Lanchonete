@@ -1,0 +1,42 @@
+#cardapio
+print("-- Cardapio da Lanchonete --")
+print("especificações")
+print("100 - Cachorro Quente - 1.20")
+print("101 - Bauru Simples - 1.30")
+print("102 - Bauru com Ovo - 1.50")
+print("103 - Hambúrguer - 1.20")
+print("104 - Cheeseburguer - 1.70")
+print("105 - Suco - 2.20")
+print("106 - Refrigerante - 1.00")
+
+codigo= int(input("Digite o Codigo:"))
+quantidade= int(input(" Digite a quantidade:"))
+
+if codigo == 100:
+    valor= 1.20
+
+elif codigo == 101:
+    valor= 1.30
+
+elif codigo == 102:
+    valor= 1.50
+
+elif codigo == 103:
+    valor= 1.20
+
+elif codigo == 104:
+    valor= 1.70
+
+elif codigo == 105:
+    valor= 2.20
+
+elif codigo == 106:
+    valor= 1.00
+
+
+else:
+    print("codigo inavalido")
+    exit ()
+
+total= valor*quantidade
+print ("Total a pagar: R$", total)
