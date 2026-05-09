@@ -1,0 +1,25 @@
+# dado o valor da venda, imprima a comissão que deverá ser paga ao vendedor.
+print("-- Valor da comissão --")
+
+venda_mensal= float(input("digite o valor da sua renda mensal em R$:"))
+
+if venda_mensal >= 100000:
+        comissao= 700+ (venda_mensal* 0.16)
+                        
+elif venda_mensal >= 80000:
+        comissao= 650+ (venda_mensal*0.14)
+
+elif venda_mensal >= 60000:
+        comissao= 600+(venda_mensal*0.14)
+        
+elif venda_mensal >= 40000:
+        comissao= 550+(venda_mensal*0.14)
+
+elif venda_mensal >= 20000:
+        comissao= 500+(venda_mensal*0.14)
+
+else:
+    venda_mensal < 20000
+    comissao= 400+(venda_mensal*0.14)
+
+print(f"Comissão a ser paga: R$ {comissao:.2f}")
