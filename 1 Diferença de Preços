@@ -1,0 +1,18 @@
+print(" -- Diferença de Preços --")
+valor=float(input("digite o valor do produto:"))
+Estado=(input("Digite o estado (MG,SP,RJ,MS):")).upper()
+
+if Estado=="MG":
+    imposto=0.07
+    print(f"valor total(Minas Gerais):R$", valor  + (valor*imposto))
+elif Estado=="SP":
+    imposto=0.12
+    print(f"valor total(São Paulo):R$", valor + (valor*imposto))
+elif Estado=="RJ":
+    imposto=0.15
+    print(f"valor total(Rio de Janeiro):R$", valor + (valor*imposto))
+elif Estado=="MS":
+    imposto=0.08
+    print(f"valor total(Mato Grosso do Sul):R$", valor + (valor*imposto))
+else:
+    print("Estado invalido")
