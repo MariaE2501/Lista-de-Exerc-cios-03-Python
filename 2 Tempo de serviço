@@ -1,0 +1,8 @@
+# tempo de serviço
+print("-- Saiba se você pode ou não se aposentar --")
+idade= int(input("Escreva sua idade:"))
+tempo_sevico = int(input("Digite seu tempo de serviço(anos):"))
+if idade >= 65 or tempo_servico >= 30 or(iade >= 60 and tempo_sevico >= 25):
+    print ("Pode se aposentar!")
+else:
+    print ("Não pode se aposentar ainda.")
